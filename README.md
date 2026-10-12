@@ -52,7 +52,13 @@ $$x_0 = \frac{a+b}{2}$$
 
 **Касательные.** Одна формула, но начальная точка зависит от случая:
 
-$$x_{n+1} = x_n - \frac{F(x_n)}{F'(x_n)}, \qquad x_0 = \begin{cases} b, & F'F'' > 0 \\ a, & F'F'' < 0 \end{cases}$$
+```math
+x_{n+1} = x_n - \frac{F(x_n)}{F'(x_n)}, \qquad
+x_0 = \begin{cases}
+b, & F'F'' > 0 \\
+a, & F'F'' < 0
+\end{cases}
+```
 
 ## 🚀 Быстрый старт
 
