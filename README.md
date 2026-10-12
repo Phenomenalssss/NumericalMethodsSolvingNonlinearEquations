@@ -149,5 +149,4 @@ python main.py
 <div align="center">
 
 Автор: [@Phenomenalssss](https://github.com/Phenomenalssss)
-
 </div>
