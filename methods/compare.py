@@ -1,6 +1,7 @@
 import gc
 import statistics
 from time import perf_counter_ns
+from decimal import Decimal
 
 import mpmath
 import sympy
@@ -115,9 +116,9 @@ def true_root(function, a, b, digits=25):
 
 
 def highlight(exact, root):
-    approx = f"{root:.{len(exact)}f}"
+    shown = format(Decimal(repr(root)), "f")
     k = 0
-    while k < len(exact) and k < len(approx) and exact[k] == approx[k]:
+    while k < len(exact) and k < len(shown) and exact[k] == shown[k]:
         k += 1
     if k == 0:
         return exact
